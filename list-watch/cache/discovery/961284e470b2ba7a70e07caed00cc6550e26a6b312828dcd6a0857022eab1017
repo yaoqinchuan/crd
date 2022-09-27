@@ -1,0 +1,8 @@
+Ş×‘¡ø¢†´-r¿˜dÃœİŠ`¤R?‘6$èHTTP/2.0 200 OK
+Content-Length: 308
+Audit-Id: 28f02aa7-0e21-4e77-8da6-e99791605235
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sun, 25 Sep 2022 09:23:53 GMT
+
+{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"events.k8s.io/v1beta1","resources":[{"name":"events","singularName":"","namespaced":true,"kind":"Event","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["ev"],"storageVersionHash":"r2yiGXH7wu8="}]}

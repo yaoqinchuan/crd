@@ -1,0 +1,8 @@
+Ïµ„ºlﬂaa;wZY‚˙ÿ €ú`√x∂V*ÖibTHTTP/2.0 200 OK
+Content-Length: 202
+Audit-Id: 58251834-1adf-4da4-b41e-275cfcaabd3f
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sun, 25 Sep 2022 09:23:53 GMT
+
+{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"authentication.k8s.io/v1","resources":[{"name":"tokenreviews","singularName":"","namespaced":false,"kind":"TokenReview","verbs":["create"]}]}

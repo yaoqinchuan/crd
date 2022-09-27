@@ -1,0 +1,8 @@
+?kçrı™•58ßí:û£,Ç¬>1ÒÀKüËÈY·HTTP/2.0 200 OK
+Content-Length: 504
+Audit-Id: 73433bec-1f07-4869-8d38-1263065f1e79
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sun, 25 Sep 2022 09:23:53 GMT
+
+{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"autoscaling/v2","resources":[{"name":"horizontalpodautoscalers","singularName":"","namespaced":true,"kind":"HorizontalPodAutoscaler","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["hpa"],"categories":["all"],"storageVersionHash":"oQlkt7f5j/A="},{"name":"horizontalpodautoscalers/status","singularName":"","namespaced":true,"kind":"HorizontalPodAutoscaler","verbs":["get","patch","update"]}]}

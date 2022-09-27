@@ -1,0 +1,8 @@
+©qÚê_øð þwy9ïØ—ÐžgÚÞßê“‹Oƒì(B1ÀHTTP/2.0 200 OK
+Content-Length: 138
+Audit-Id: 442bdbfd-5636-4fbb-8a41-30adc4044134
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Sun, 25 Sep 2022 09:23:53 GMT
+
+{"kind":"APIVersions","versions":["v1"],"serverAddressByClientCIDRs":[{"clientCIDR":"0.0.0.0/0","serverAddress":"192.168.223.139:6443"}]}
