@@ -1,8 +1,0 @@
-Ho@˙ÿ¨⁄†4˜ÍÚÉÅ1û3@Œπóõ]l∑{≤ê´HTTP/2.0 200 OK
-Content-Length: 819
-Audit-Id: 05966671-ee1c-4abf-b844-a7562fa47629
-Cache-Control: no-cache, private
-Content-Type: application/json
-Date: Sun, 25 Sep 2022 09:23:53 GMT
-
-{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"flowcontrol.apiserver.k8s.io/v1beta2","resources":[{"name":"flowschemas","singularName":"","namespaced":false,"kind":"FlowSchema","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"storageVersionHash":"9bSnTLYweJ0="},{"name":"flowschemas/status","singularName":"","namespaced":false,"kind":"FlowSchema","verbs":["get","patch","update"]},{"name":"prioritylevelconfigurations","singularName":"","namespaced":false,"kind":"PriorityLevelConfiguration","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"storageVersionHash":"BFVwf8eYnsw="},{"name":"prioritylevelconfigurations/status","singularName":"","namespaced":false,"kind":"PriorityLevelConfiguration","verbs":["get","patch","update"]}]}

@@ -1,9 +1,0 @@
-“hå»Nœo≤Òó5õòW):¨ç)Bﬂ'’ª
-dJf∏Ø}HTTP/2.0 200 OK
-Content-Length: 438
-Audit-Id: c7d6ac91-1980-4132-987c-b1e44e300a80
-Cache-Control: no-cache, private
-Content-Type: application/json
-Date: Sun, 25 Sep 2022 09:23:53 GMT
-
-{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"batch/v1beta1","resources":[{"name":"cronjobs","singularName":"","namespaced":true,"kind":"CronJob","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["cj"],"categories":["all"],"storageVersionHash":"sd5LIXh4Fjs="},{"name":"cronjobs/status","singularName":"","namespaced":true,"kind":"CronJob","verbs":["get","patch","update"]}]}

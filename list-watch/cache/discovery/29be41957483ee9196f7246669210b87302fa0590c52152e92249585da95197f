@@ -1,8 +1,0 @@
-0*Á«à†½"µBŠs±Êÿþ–Í:˜ßh¡ô^”¹™HTTP/2.0 200 OK
-Content-Length: 704
-Audit-Id: aa222b02-3e0a-4cd0-a4b3-5dd0a1feda0b
-Cache-Control: no-cache, private
-Content-Type: application/json
-Date: Sun, 25 Sep 2022 09:23:53 GMT
-
-{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"policy/v1beta1","resources":[{"name":"poddisruptionbudgets","singularName":"","namespaced":true,"kind":"PodDisruptionBudget","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["pdb"],"storageVersionHash":"6BGBu0kpHtk="},{"name":"poddisruptionbudgets/status","singularName":"","namespaced":true,"kind":"PodDisruptionBudget","verbs":["get","patch","update"]},{"name":"podsecuritypolicies","singularName":"","namespaced":false,"kind":"PodSecurityPolicy","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["psp"],"storageVersionHash":"khBLobUXkqA="}]}

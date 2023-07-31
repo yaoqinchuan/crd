@@ -1,8 +1,0 @@
-Ç‰£Ω3WLùﬂ˜Áæ(√äæ jmâ≥µRaÛZ‚ÑÇHTTP/2.0 200 OK
-Content-Length: 302
-Audit-Id: 95388278-b9ef-4eba-9d18-e17f14dcc553
-Cache-Control: no-cache, private
-Content-Type: application/json
-Date: Sun, 25 Sep 2022 09:23:53 GMT
-
-{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"discovery.k8s.io/v1","resources":[{"name":"endpointslices","singularName":"","namespaced":true,"kind":"EndpointSlice","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"storageVersionHash":"Nx3SIv6I0mE="}]}
