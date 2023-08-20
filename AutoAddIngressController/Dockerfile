@@ -8,5 +8,6 @@ RUN go env -w GO111MODULE=on && \
 
 FROM golang:1.19
 WORKDIR /app
-COPY --from=builder /project/main .
-CMD ["./app/main"]
+ADD config config
+COPY --from=builder /project/main main
+CMD ["/app/main"]

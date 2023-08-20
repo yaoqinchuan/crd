@@ -1,0 +1,31 @@
+# permissions for end users to edit serviceingresscontrollers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: serviceingresscontroller-editor-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: kubebuilder
+    app.kubernetes.io/part-of: kubebuilder
+    app.kubernetes.io/managed-by: kustomize
+  name: serviceingresscontroller-editor-role
+rules:
+- apiGroups:
+  - yqc.tech.github.com
+  resources:
+  - serviceingresscontrollers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - yqc.tech.github.com
+  resources:
+  - serviceingresscontrollers/status
+  verbs:
+  - get

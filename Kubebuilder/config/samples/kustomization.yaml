@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- yqc.tech_v1alpha1_serviceingresscontroller.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

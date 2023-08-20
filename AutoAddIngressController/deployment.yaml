@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-ingress-controller
+spec:
+  selector:
+    matchLabels:
+      app: service-ingress-controller
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: service-ingress-controller
+    spec:
+      serviceAccountName: ingress-manager-sa
+      containers:
+        - name: controller
+          imagePullPolicy: IfNotPresent
+          image: registry.cn-hangzhou.aliyuncs.com/qinchuan/service-ingress-controller:latest
+
