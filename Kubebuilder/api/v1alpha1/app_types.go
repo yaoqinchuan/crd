@@ -23,16 +23,18 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
-// ServiceIngressControllerSpec defines the desired state of ServiceIngressController
-type ServiceIngressControllerSpec struct {
+// AppSpec defines the desired state of App
+type AppSpec struct {
+	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
+	// Important: Run "make" to regenerate code after modifying this file
 	EnableIngress bool   `json:"enable_ingress,omitempty"`
 	EnableService bool   `json:"enable_service"`
 	Replicas      int32  `json:"replicas"`
 	Image         string `json:"image"`
 }
 
-// ServiceIngressControllerStatus defines the observed state of ServiceIngressController
-type ServiceIngressControllerStatus struct {
+// AppStatus defines the observed state of App
+type AppStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 }
@@ -40,24 +42,24 @@ type ServiceIngressControllerStatus struct {
 //+kubebuilder:object:root=true
 //+kubebuilder:subresource:status
 
-// ServiceIngressController is the Schema for the serviceingresscontrollers API
-type ServiceIngressController struct {
+// App is the Schema for the apps API
+type App struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Spec   ServiceIngressControllerSpec   `json:"spec,omitempty"`
-	Status ServiceIngressControllerStatus `json:"status,omitempty"`
+	Spec   AppSpec   `json:"spec,omitempty"`
+	Status AppStatus `json:"status,omitempty"`
 }
 
 //+kubebuilder:object:root=true
 
-// ServiceIngressControllerList contains a list of ServiceIngressController
-type ServiceIngressControllerList struct {
+// AppList contains a list of App
+type AppList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata,omitempty"`
-	Items           []ServiceIngressController `json:"items"`
+	Items           []App `json:"items"`
 }
 
 func init() {
-	SchemeBuilder.Register(&ServiceIngressController{}, &ServiceIngressControllerList{})
+	SchemeBuilder.Register(&App{}, &AppList{})
 }

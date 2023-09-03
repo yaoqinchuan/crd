@@ -14,7 +14,22 @@ resources:
   controller: true
   domain: github.com
   group: yqc.tech
+  kind: App
+  path: github.com/api/v1alpha1
+  version: v1alpha1
+  webhooks:
+    defaulting: true
+    webhookVersion: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: github.com
+  group: yqc.tech
   kind: ServiceIngressController
   path: github.com/api/v1alpha1
   version: v1alpha1
+  webhooks:
+    validation: true
+    webhookVersion: v1
 version: "3"

@@ -1,12 +1,9 @@
 apiVersion: yqc.tech.github.com/v1alpha1
 kind: ServiceIngressController
 metadata:
-  labels:
-    app.kubernetes.io/name: serviceingresscontroller
-    app.kubernetes.io/instance: serviceingresscontroller-sample
-    app.kubernetes.io/part-of: kubebuilder
-    app.kubernetes.io/managed-by: kustomize
-    app.kubernetes.io/created-by: kubebuilder
   name: serviceingresscontroller-sample
 spec:
-  # TODO(user): Add fields here
+  image: nginx:latest
+  replicas: 1
+  enable_ingress: true
+  enable_service: true
