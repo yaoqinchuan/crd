@@ -17,6 +17,7 @@ limitations under the License.
 package v1alpha1
 
 import (
+	"errors"
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
@@ -43,15 +44,18 @@ var _ webhook.Validator = &ServiceIngressController{}
 // ValidateCreate implements webhook.Validator so a webhook will be registered for the type
 func (r *ServiceIngressController) ValidateCreate() (admission.Warnings, error) {
 	serviceingresscontrollerlog.Info("validate create", "name", r.Name)
-
-	// TODO(user): fill in your validation logic upon object creation.
+	if r.Spec.EnableIngress && !r.Spec.EnableService {
+		return admission.Warnings{"service switch should be true"}, errors.New("service switch should be true")
+	}
 	return nil, nil
 }
 
 // ValidateUpdate implements webhook.Validator so a webhook will be registered for the type
 func (r *ServiceIngressController) ValidateUpdate(old runtime.Object) (admission.Warnings, error) {
 	serviceingresscontrollerlog.Info("validate update", "name", r.Name)
-
+	if r.Spec.EnableIngress && !r.Spec.EnableService {
+		return admission.Warnings{"service switch should be true"}, errors.New("service switch should be true")
+	}
 	// TODO(user): fill in your validation logic upon object update.
 	return nil, nil
 }
@@ -59,7 +63,6 @@ func (r *ServiceIngressController) ValidateUpdate(old runtime.Object) (admission
 // ValidateDelete implements webhook.Validator so a webhook will be registered for the type
 func (r *ServiceIngressController) ValidateDelete() (admission.Warnings, error) {
 	serviceingresscontrollerlog.Info("validate delete", "name", r.Name)
-
 	// TODO(user): fill in your validation logic upon object deletion.
 	return nil, nil
 }
